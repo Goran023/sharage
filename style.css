@@ -13,12 +13,6 @@ h3{
 }
 
 /*NAVBAR*/
-
-@media screen and (max-width: 800px) {
-  .logoo{
-    display: none;
-    text-align: left;
-  }
   .plate, .wine{
     display: none!important;
   }
