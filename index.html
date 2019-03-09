@@ -1,62 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri" rel="stylesheet">
 </head>
 <!--Boju pozadine sam stavila samo da vidite kako izgleda, ubacite u css-->
 <body>
     <!--Glavni div za celu stranu-->
-    <div>
+    <div class="container-fluid">
         <!--Heder-->
-        <div>
-            <ul>
-                <li>nav1</li>
-                <li>nav2</li>
-                <!--Ubacite logo-->
-                <li><img src="">logo</li>
-                <li>nav3</li>
-                <li>nav4</li>
-            </ul>
-        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-white fixed-top ">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="#" hidden></a>
+                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div><img class="navbar-toggler border-0" src="slike/logo100.png" alt="logo"></div>
+
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="#">REZERVACIJA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">O NAMA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link logoo" href="#"><img id="logo" src="slike/logo100.png" alt="logo"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">JELOVNIK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">KONTAKT</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div>
+            </nav>
+
         <!--Prelaz sa strane na stranu sa par reci o restoranu-->
-        <div>
-            <img src="slike/spatula.png">
-            <img src="slike/dots.png">
-            <img src="slike/pan.png">
-            <img src="slike/rosemary.png">
-            <p>Ukusi Italije bla bla</p>
-            <img src="slike/dots.png">
-            <button>Rezervisite</button>
-            <img src="slike/wine.png">
-            <img src="slike/corckscrew.png">
+        <div class="home">
+            <img class="first"src="slike/pozadina3.png">
+            <img class="plate" src="slike/plate.png" width="340">
+            <img class="wine"src="slike/wine.png" width="240">
+            <div class="text">
+              <h3>Neki naslov</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nam odit at numquam quia cupiditate, eos fugiat est ad officia.</p>
+              <button>Rezervisite</button>
+            </div>
         </div>
         <!--Stranica o nama-->
-        <div>
+        <div class="aboutUs">
             <h3>O nama</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam ut quibusdam quos repellat, suscipit beatae, maxime, deserunt possimus fugit consequuntur reprehenderit fuga est voluptas quidem aut atque maiores molestiae?</p>
             <hr>
             <!--Dodati slike ambijenta-->
-            <img src="">
-            <img src="">
-            <img src="">
         </div>
-        <!--Dodati slike ponuda dana-->
-        <div>
-            <div><img src=""><span>Jelo1</span></div>
-            <div><img src=""><span>Jelo2</span></div>
-            <div><img src=""><span>Jelo3</span></div>
-            <button>Rezervisite</button>
+
+        <!--Slike ponuda dana ili ambijent-->
+
+<div class="container mt-3">
+
+        <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicatori -->
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ul>
+
+          <!-- Slideshow -->
+          <div class="carousel-inner">
+            <!--Prvi slide-->
+            <div class="carousel-item active">
+                <span class="row">
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
+                        <img class="img-fluid img-thumbnail card-img-top " src="img (151).jpg" alt="PRVA" >
+                        <div class="card-body">
+                        <h5 class="card-title">NASLOV</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
+                            <img class="img-fluid img-thumbnail card-img-top" src="img (151).jpg" alt="DRUGA" >
+                            <div class="card-body">
+                            <h5 class="card-title">NASLOV</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                            </div>
+                        </div>
+
+
+            </span>
+            </div>
+
+            <!--Drugi slide-->
+            <div class="carousel-item">
+                <span class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
+                        <img class="img-fluid img-thumbnail card-img-top" src="img (150).jpg" alt="PRVA" >
+                        <div class="card-body">
+                        <h5 class="card-title">NASLOV</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
+                        <img class="img-fluid img-thumbnail card-img-top" src="img (150).jpg" alt="DRUGA" >
+                        <div class="card-body">
+                        <h5 class="card-title">NASLOV</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        </div>
+                    </div>
+                </span>
+
+
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev " href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
+        </div>
+
         <!--Prelaz sa strane na stranu-->
         <div>
-            <img src="slike/plate.png">
-            <img src="slike/bacon.png">
-            <img src="slike/knife.png">
-            <img src="slike/fork.png">
             <p>par reci opet o restoranu</p>
             <!--Rezervacija-->
             <div>
@@ -66,13 +150,7 @@
         </div>
         <!--Prelaz-->
         <div>
-            <img src="slike/bread.png">
             <p>Bla bla o restoranu</p>
-            <img src="slike/pieceofbread.png">
-            <img src="slike/dots.png">
-            <img src="slike/spoon.png">
-            <img src="slike/dots.png">
-            <img src="slike/franchbread.png">
         </div>
         <div>
             <!--Meni dinamicki-->
@@ -80,16 +158,35 @@
         <!--Kontakt-->
         <div>
             <div><p>Adresa, mesto, kontakt telefon</p></div>
-            <div><iframe><!--Google mape--></iframe></div>
+            <div></div>
         </div>
-        <footer>
-            <!--Naknadno cu dodati ikonice i banere-->
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            2019.&copy;<a href="#">Restoran Sharage</a>
+        <!--FOOTER-->
+        <footer class="row" >
+            <p class=" ">2019.&copy;<a href="#">Restoran Sharage</a></p>
         </footer>
     </div>
+
+<!--Dugme za vracanje na vrh stranice-->
+<button class="btn btn-outline-danger btn-sm mb-2 float-right" onclick="topFunction()" id="myBtn" title="Go to top">Vrh</button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
