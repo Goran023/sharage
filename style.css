@@ -4,3 +4,21 @@
   padding: 0px;
   list-style-type: none;
 }
+/*NAVBAR*/
+
+@media screen and (max-width: 600px) {
+  .logoo{
+    display: none;
+    text-align: left;  
+  }
+}
+#logo{
+    height: 40px;
+}
+
+/*VRH dugme*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+}
