@@ -13,6 +13,7 @@ h3{
 }
 
 /*NAVBAR*/
+@media screen and (max-width:800px){
   .plate, .wine{
     display: none!important;
   }
