@@ -13,14 +13,14 @@
     <div class="container-fluid">
         <!--Heder-->
         
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light fixed-top ">
                 <div class="container-fluid">
                   
                     <a class="navbar-brand" href="#" hidden></a>
                     <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div><img class="navbar-toggler" src="logo2" alt="logo"></div>
+                    <a><img class="navbar-toggler" src="logo2" alt="logo"></a>
                    
                     <div class="collapse navbar-collapse" id="navbarNav">
                       
@@ -31,8 +31,8 @@
                         <li class="nav-item">
                             <a class="nav-link " href="#">O NAMA</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link logoo" href="#"><img id="logo" src="logo.png" alt="logo"></a>
+                        <li class="nav-item d-sm-none d-none d-md-block d-lg-block">
+                            <a class="nav-link" href="#"><img id="logo" src="../logo.png" alt="logo"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">JELOVNIK</a>
@@ -43,13 +43,7 @@
                     </ul>
                     </div>
     
-                   <ul class="navbar-nav">
-                        <li class="language">
-                                <sup><a id="" class="active" href="">SR</a></sup>
-                                <sup><a id="" href="">EN</a></sup>
-                        </li>
-                    </ul>
-                </div>
+              </div>
             </nav>
 
         <!--Prelaz sa strane na stranu sa par reci o restoranu-->
@@ -60,7 +54,7 @@
             <img src="slike/rosemary.png">
             <p>Ukusi Italije bla bla</p>
             <img src="slike/dots.png">
-            <button>Rezervisite</button>
+            <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
             <img src="slike/wine.png">
             <img src="slike/corckscrew.png">
         </div>
@@ -78,35 +72,38 @@
         
         <!--Slike ponuda dana ili ambijent-->
         
-<div class="container mt-3">
-
-        <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
+<div class="container mt-3 mx-auto">
+    
+    <div class="container-fluid">
+    <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5">REZERVISITE</button>    
+        
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicatori -->
           <ul class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
           </ul>
           
           <!-- Slideshow -->
           <div class="carousel-inner">
             <!--Prvi slide-->
             <div class="carousel-item active">
-                <span class="row">
+                <span class="row mx-auto">
                     
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
-                        <img class="img-fluid img-thumbnail card-img-top " src="img (151).jpg" alt="PRVA" >
+                        <img class="img-fluid img-thumbnail card-img-top " src="../img (40).jpg" alt="PRVA" >
                         <div class="card-body">
-                        <h5 class="card-title">NASLOV</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        <h5 class="card-title text-center">NASLOV</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
-                            <img class="img-fluid img-thumbnail card-img-top" src="img (151).jpg" alt="DRUGA" >
+                            <img class="img-fluid img-thumbnail card-img-top" src="../img (40).jpg" alt="DRUGA" >
                             <div class="card-body">
-                            <h5 class="card-title">NASLOV</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                            <h5 class="card-title text-center">NASLOV</h5>
+                            <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                             </div>
                         </div>
 
@@ -118,18 +115,18 @@
             <div class="carousel-item">
                 <span class="row">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
-                        <img class="img-fluid img-thumbnail card-img-top" src="img (150).jpg" alt="PRVA" >
+                        <img class="img-fluid img-thumbnail card-img-top" src="../img (151).jpg" alt="PRVA" >
                         <div class="card-body">
-                        <h5 class="card-title">NASLOV</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        <h5 class="card-title text-center">NASLOV</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
-                        <img class="img-fluid img-thumbnail card-img-top" src="img (150).jpg" alt="DRUGA" >
+                        <img class="img-fluid img-thumbnail card-img-top" src="../img (151).jpg" alt="DRUGA" >
                         <div class="card-body">
-                        <h5 class="card-title">NASLOV</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        <h5 class="card-title text-center">NASLOV</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
                     </div>
                 </span>
@@ -147,7 +144,7 @@
           </a>
         </div>
         </div>
-
+    </div>
         <!--Prelaz sa strane na stranu-->
         <div>
             <img src="slike/plate.png">
@@ -158,7 +155,8 @@
             <!--Rezervacija-->
             <div>
                 <img src="">Slika stolova
-                <button>Rezervisite</button>
+                <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
+
             </div>
         </div>
         <!--Prelaz-->
@@ -180,7 +178,7 @@
             <div><iframe><!--Google mape--></iframe></div>
         </div>
         <!--FOOTER-->
-<footer class="row" >
+<footer class="row align-middle" >
         <div class="col-sm-4 col-12">
         <iframe class="card-img-top" src=" " frameborder="1"></iframe>
         </div>
@@ -190,12 +188,13 @@
           <div class="col-sm-4 col-12">
             <iframe class="card-img-top" src=" " frameborder="1"></iframe>
             </div>
-            <p class=" ">2019.&copy;<a href="#">Restoran Sharage</a></p>
+            <p class="text-center">2019.&copy;<a href="#">Restoran Sharage</a></p>
         </footer>
     </div>
 
 <!--Dugme za vracanje na vrh stranice-->
-<button class="btn btn-outline-danger btn-sm mb-2 float-right" onclick="topFunction()" id="myBtn" title="Go to top">Vrh</button>
+<a href="#" class="badge badge-warning" onclick="topFunction()" id="myBtn"><i class="fa fa-arrow-circle-o-up" style="font-size:36px"></i></a>
+
 <script>
 window.onscroll = function() {scrollFunction()};
   
