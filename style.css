@@ -5,13 +5,6 @@
   list-style-type: none;
 }
 /*NAVBAR*/
-
-@media screen and (max-width: 600px) {
-  .logoo{
-    display: none;
-    text-align: left;  
-  }
-}
 #logo{
     height: 40px;
 }
