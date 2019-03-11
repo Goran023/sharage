@@ -10,6 +10,14 @@
 	font-style: normal;
 }
 
+body{
+	background: #f2da9d !important;
+}
+.rm-info p{
+	padding-top: 250px;
+}
+
+
 .rm-container {
 	width: 33%;
 	height: 700px;
@@ -60,7 +68,7 @@
 }
 
 .rm-wrapper > div > div {
-	background: #fff url(../images/white_paperboard.jpg);
+	background:  url(../images/white_paperboard.jpg);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -146,7 +154,7 @@ a.rm-button-open,
 }
 
 .rm-content h3 {
-	font-size: 13px;
+	font-size: 15px;
 	margin: 40px 0;
 	padding: 20px 40px;
 	color: #323b4c;
