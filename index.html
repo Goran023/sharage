@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri" rel="stylesheet">
+    
 </head>
 <!--Boju pozadine sam stavila samo da vidite kako izgleda, ubacite u css-->
 <body>
@@ -32,11 +33,11 @@
                         <li class="nav-item">
                             <a class="nav-link " href="#">O NAMA</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link logoo" href="#"><img id="logo" src="slike/logo100.png" alt="logo"></a>
+                        <li class="nav-item d-sm-none d-none d-md-block d-lg-block">
+                            <a class="nav-link" href="#"><img id="logo" src="slike/logo100.png" alt="logo"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="jelovnik.html">JELOVNIK</a>
+                            <a class="nav-link" href="#">JELOVNIK</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  " href="#">KONTAKT</a>
@@ -45,107 +46,115 @@
                     </div>
 
                 </div>
-            </nav>
+        </nav>
 
         <!--Prelaz sa strane na stranu sa par reci o restoranu-->
-        <div class="home">
+        <div class="home col-12">
             <img class="first"src="slike/pozadina3.png">
             <img class="plate" src="slike/plate.png" width="340">
             <img class="wine"src="slike/wine.png" width="240">
             <div class="text">
               <h3>Neki naslov</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nam odit at numquam quia cupiditate, eos fugiat est ad officia.</p>
-              <button>Rezervisite</button>
+              <button type="button" class="btn btn-outline-warning rounded-pill">REZERVISITE</button>
             </div>
         </div>
         <!--Stranica o nama-->
-        <div class="aboutUs">
+<div class="container-fluid">
+        
+        <div class="aboutUs col-sm-12 col-lg-6 m-auto">
+            
             <h3>O nama</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam ut quibusdam quos repellat, suscipit beatae, maxime, deserunt possimus fugit consequuntur reprehenderit fuga est voluptas quidem aut atque maiores molestiae?</p>
             <hr>
+            
             <!--Dodati slike ambijenta-->
         </div>
 
         <!--Slike ponuda dana ili ambijent-->
 
-<div class="container mt-3">
 
-        <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicatori -->
-          <ul class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-          </ul>
+    <div id="myCarousel" class="carousel slide justify-content-center container" data-ride="carousel">
+                <!-- Indicatori -->
+    
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ul>
 
-          <!-- Slideshow -->
-          <div class="carousel-inner">
-            <!--Prvi slide-->
-            <div class="carousel-item active">
-                <span class="row">
+    <!-- Slideshow -->
+    
+    <div class="carousel-inner">
+            
+        <!--Prvi slide-->
+        <div class="carousel-item active">
+                <span class="row justify-content-center">
 
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
-                        <img class="img-fluid img-thumbnail card-img-top " src="img (151).jpg" alt="PRVA" >
+                        <img class="img-fluid img-thumbnail card-img-top" src="img (151).jpg" alt="PRVA" >
                         <div class="card-body">
-                        <h5 class="card-title">NASLOV</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                            <h5 class="card-title text-center">NASLOV</h5>
+                            <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
-                            <img class="img-fluid img-thumbnail card-img-top" src="img (151).jpg" alt="DRUGA" >
-                            <div class="card-body">
-                            <h5 class="card-title">NASLOV</h5>
-                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
-                            </div>
+                        <img class="img-fluid img-thumbnail card-img-top" src="img (151).jpg" alt="DRUGA" >
+                        <div class="card-body">
+                            <h5 class="card-title text-center">NASLOV</h5>
+                            <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
+                    </div>
+                </span>
+        </div>
 
-
-            </span>
-            </div>
-
-            <!--Drugi slide-->
+    <!--Drugi slide-->
             <div class="carousel-item">
-                <span class="row">
+                <span class="row justify-content-center">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
                         <img class="img-fluid img-thumbnail card-img-top" src="img (150).jpg" alt="PRVA" >
-                        <div class="card-body">
-                        <h5 class="card-title">NASLOV</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        <div class="card-body ">
+                            <h5 class="card-title text-center">NASLOV</h5>
+                            <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" style="width: 18rem;">
                         <img class="img-fluid img-thumbnail card-img-top" src="img (150).jpg" alt="DRUGA" >
-                        <div class="card-body">
-                        <h5 class="card-title">NASLOV</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
+                        <div class="card-body ">
+                            <h5 class="card-title text-center">NASLOV</h5>
+                            <p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nostrum, obcaecati sint facilis magnam suscipit nulla commodi officiis alias labore officia! Non omnis corporis nemo libero dignissimos doloribus saepe iusto?</p>
                         </div>
                     </div>
                 </span>
-
-
-
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev " href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
+            </div>
+            
+        <!-- Left and right controls -->
+            
+            <a class="carousel-control-prev text-red" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon "></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>       
         </div>
 
-        <!--Prelaz sa strane na stranu-->
+        </div><!--kraj slajdova-->
+
+        <span class="row justify-content-center pb-2">
+        <button type="button" class="btn btn-outline-warning rounded-pill">REZERVISITE</button>
+        </span>
+
+</div><!--kraj stranice o nama-->
+
+<!--Prelaz sa strane na stranu-->
         <div>
             <p>par reci opet o restoranu</p>
             <!--Rezervacija-->
             <div>
                 <img src="">Slika stolova
-                <button>Rezervisite</button>
+                <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
             </div>
         </div>
         <!--Prelaz-->
@@ -161,13 +170,23 @@
             <div></div>
         </div>
         <!--FOOTER-->
-        <footer class="row" >
-            <p class=" ">2019.&copy;<a href="#">Restoran Sharage</a></p>
+        <footer class="row align-middle" >
+            <div class="col-sm-4 col-12">
+                <iframe class="card-img-top" src=" " frameborder="1"></iframe>
+            </div>
+            <div class="col-sm-4 col-12">
+                <iframe class="card-img-top" src=" " frameborder="1"></iframe>
+            </div>
+            <div class="col-sm-4 col-12">
+                <iframe class="card-img-top" src=" " frameborder="1"></iframe>
+            </div>
+                <p class="text-center col-12">2019.&copy;<a href="#">Restoran Sharage</a></p>
         </footer>
-    </div>
+</div>
 
 <!--Dugme za vracanje na vrh stranice-->
-<button class="btn btn-outline-danger btn-sm mb-2 float-right" onclick="topFunction()" id="myBtn" title="Go to top">Vrh</button>
+<button class="btn btn-danger alert-light btn-sm ml-2 fa fa-angle-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
 <script>
 window.onscroll = function() {scrollFunction()};
 
@@ -183,6 +202,7 @@ function scrollFunction() {
     document.documentElement.scrollTop = 0;
   }
   </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
