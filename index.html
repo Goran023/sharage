@@ -17,17 +17,17 @@
         <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-white fixed-top ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" hidden></a>
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                     <div><img class="navbar-toggler border-0" src="slike/logo100.png" alt="logo"></div>
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav nav-fill w-100">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#">REZERVACIJA</a>
+                        <a class="nav-link " href="#reservation">REZERVACIJA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">O NAMA</a>
+                        <a class="nav-link " href="#aboutus">O NAMA</a>
                     </li>
                     <li class="nav-item d-sm-none d-none d-md-block d-lg-block">
                         <a class="nav-link" href="#"><img id="logo" src="slike/logo100.png" alt="logo"></a>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="jelovnik.html">JELOVNIK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  " href="#">KONTAKT</a>
+                        <a class="nav-link  " href="#contact">KONTAKT</a>
                     </li>
                  </ul>
                 </div>
@@ -47,9 +47,11 @@
             <img class="first"src="slike/pozadina3.png">
             <img class="plate" src="slike/plate.png" width="340">
             <img class="wine"src="slike/wine.png" width="240">
+            <style>
+            </style>
             <div class="text">
-              <h3>Neki naslov</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nam odit at numquam quia cupiditate, eos fugiat est ad officia.</p>
+                <center><h3>Rezervisite na vreme</h3>
+              <p>..i svratite na frustuk, jauznu, <br> ili pak, na forspajs, rinflajs i cuspajs</p>
               <button type="button" class="btn btn-outline-warning rounded-pill">REZERVISITE</button>
             </div>
         </div>
@@ -57,9 +59,9 @@
 <div class="container-fluid">
         <!--Ovde treba u css da se sredi, ja sam ovako nesto mislila, naravno stilizovanije-->
         <div class="aboutUs col-sm-12 col-lg-6 m-auto" >
-            <center><h3>Potraga za savršenstvom</h3>
+            <center><h3 id="aboutus">Potraga za savršenstvom</h3>
         <hr style="background-color:#edc29e;height:1px; width:40%;"/>
-            <p>Da, to je ono što mi svakodnevno radimo.<br>Želimo da svaki zalogaj bude savršen, da nas po tome upamtite. Da od svakog jela stvorimo umetnost. Želimo da vreme koje provedete u obedovanju ne bude puka potreba, već da osetimo punu uzvišenost svakog sastojka naših jela. Budite naši gosti, mi ćemo biti vaši prijatelji. Malo vise o samom pocetku, restoran Sharage je nastao 2019. godine u srcu <a href="http://www.zrenjanin.rs/">Zrenjanina</a> saradnjom cetiri prijateljska buntovnika "iz sharaga". Aposlutni buntovnici u svemu resili su da se oprobaju i u buntu protiv tradicionalnog, a opet i protiv modernog, kako u ambijentu, tako i u ukusima nase hrane, naizgled nespojivo, a opet tako savrseno i jedinstveno. Dodjite i uverite se sami.</p>
+            <p>Da, to je ono što mi svakodnevno radimo.<br>Želimo da svaki zalogaj bude savršen, da nas po tome upamtite. Da od svakog jela stvorimo umetnost. Želimo da vreme koje provedete u obedovanju ne bude puka potreba, već da osetimo punu uzvišenost svakog sastojka naših jela. Budite naši gosti, mi ćemo biti vaši prijatelji. Malo vise o samom pocetku, restoran Sharage je nastao 2019. godine u srcu <a href="http://www.zrenjanin.rs/">Zrenjanina</a> saradnjom pet prijateljskih buntovnika "iz sharaga". Aposlutni buntovnici u svemu resili su da se oprobaju i u buntu protiv tradicionalnog, a opet i protiv modernog, kako u ambijentu, tako i u ukusima nase hrane, naizgled nespojivo, a opet tako savrseno i jedinstveno. Dodjite i uverite se sami.</p>
             <hr style="background-color:#edc29e;height:1px; width:40%;"/></center>
             <!--Proverite tekst-->
             <!--Dodati slike ambijenta-->
@@ -147,7 +149,7 @@
             <!--Rezervacija-->
             <div>
                 <img src="">Slika stolova
-                <button type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
+                <button id="reservation" type="button" class="btn btn-outline-warning rounded-pill mb-2 mb-5 ">REZERVISITE</button>
             </div>
         </div>
         <!--Prelaz-->
@@ -159,7 +161,7 @@
         </div>
         <!--Kontakt-->
         <div>
-            <div><p>Adresa, mesto, kontakt telefon</p></div>
+            <div><p id="contact">Adresa, mesto, kontakt telefon</p></div>
             <div></div>
         </div>
         <!--FOOTER-->
