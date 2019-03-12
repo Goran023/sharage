@@ -73,16 +73,23 @@ nav{
   margin-left: 210px;
 }
 .aboutUs{
-  top: 200px;
   height: 90vh;
-  width: 100vw;
   background: tomato;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 .slajdovi{
-  height: 90vh;
+  height: 86vh !important;
+  background: #282828;
+  padding-top: 10vh;
 }
+.carouselbtn{
+  margin-top: 4vh;
+}
+
 .reservation{
-  height: 90vh;
+  height: 90vh !important;
   background: skyblue;
 }
 .jelovnik{
