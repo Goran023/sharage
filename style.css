@@ -74,17 +74,23 @@ nav{
 }
 .aboutUs{
   top: 200px;
-  height: 100vh;
+  height: 90vh;
+  width: 100vw;
+  background: tomato;
+}
+.slajdovi{
+  height: 90vh;
 }
 .reservation{
-  height: 100vh;
+  height: 90vh;
   background: skyblue;
 }
 .jelovnik{
-  height: 100vh;
+  height: 115vh !important;
+  background: tomato;
 }
 .contact{
-  height: 100vh;
+  height: 90vh;
 }
 footer{
   background-color: #282828;
