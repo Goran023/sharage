@@ -44,7 +44,7 @@
                             <a class="nav-link " href="#">O NAMA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link logoo" href="#"><img id="logo" src="images/logo150.png" alt="logo"></a>
+                            <a class="nav-link logoo" href="index.html"><img id="logo" src="images/logo150.png" alt="logo"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">JELOVNIK</a>
@@ -328,9 +328,11 @@
     </div>
 
 <!--Dugme za vracanje na vrh stranice-->
-<button class="btn btn-outline-danger btn-sm mb-2 float-right" onclick="topFunction()" id="myBtn" title="Go to top">Vrh</button>
+<button class="btn btn-outline-danger btn-sm mb-2 float-right" onclick="topFunction()" id="myBtn" title="Go to top">&#x21E7</button>
 <script>
 window.onscroll = function() {scrollFunction()};
+document.getElementById("myBtn").style.display = "none";
+
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
