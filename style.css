@@ -4,6 +4,9 @@
   padding: 0px;
   list-style-type: none;
 }
+/*GLAVNE BOJE NA STRANI*/
+/*body - #f6e6bb crna- #282828*/
+/*PODESAVANJE TEXTA-NA CELOJ STRANI*/
 p{
   font-family: 'Amiri', serif !important;
   font-size: 20px;
@@ -14,20 +17,23 @@ h3{
 }
 /*NAV BAR*/
 .navbar-nav{
-    margin-top:0px;
-    align-items: center;
-    font-family: 'Amiri', serif !important;
-    font-size: 20px;
-    padding: 0px !important;
+  margin-top:0px;
+  align-items: center;
+  font-family: 'Amiri', serif !important;
+  padding: 0px !important;
+
 }
 nav{
   -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.35);
   -moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.35);
   box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.35);
 }
-/*skrolovanje nav bara*/
+
+/*SKROLOVANJE*/
 .scrolled-nav {
   font-size: 16px;
+  background-color: white !important;
+  margin-top: 0px;
 }
 #global-nav {
   position: fixed;
@@ -36,11 +42,10 @@ nav{
   z-index: 9999;
   height: 100px;
   width: 100%;
-  background: #324c5f;
   color: #fff;
   line-height: 150px;
-    -webkit-transition: height .5s, line-height .5s; /* Safari */
-    transition: height .5s, line-height .5s;
+  -webkit-transition: height .5s, line-height .5s; /* Safari */
+  transition: height .5s, line-height .5s;
 }
 .scrolled-nav {
   height: 60px !important;
@@ -57,7 +62,6 @@ nav{
   height: 50px !important;
   line-height: 60px !important;
 }
-/*kraj skrolovanja navbara*/
 .nav-item a{
   font-size: 23px !important;
 }
@@ -65,14 +69,6 @@ nav{
   display: flex;
   flex-direction: column;
 }
-
-/* Vrh button */
-#myBtn{
-  position: fixed;
-  bottom: 20px;
-  z-index: 99;
-}
-
 /*Home page*/
 .home{
   height:100vh !important;
@@ -105,41 +101,57 @@ nav{
   align-items: baseline;
   margin-left: 210px;
 }
+/*ABOUT US SECTION*/
 .aboutUs{
-  height: 90vh;
+  height: 93vh;
   background: tomato;
   display: flex;
   align-items: center;
   align-content: center;
 }
+/*DIV SA CAROUSELOM*/
 .slajdovi{
-  height: 86vh !important;
+  height: 92vh !important;
   background: #282828;
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 .carouselbtn{
   margin-top: 4vh;
 }
-
+/*DIV ZA REYERVACIJU*/
 .reservation{
-  height: 90vh !important;
-  background: skyblue;
-}
-.jelovnik{
-  height: 115vh !important;
+  height: 91vh !important;
   background: tomato;
 }
+/*JELOVNIK*/
+.jelovnik{
+  height: 107vh !important;
+  background: #282828;
+}
+/*KONTAKT*/
 .contact{
   height: 90vh;
 }
+/* Vrh button */
+#myBtn{
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+}
+/*FOOTER*/
 footer{
-  background-color: #282828;
-  color: white;
+  background-color: white;
+  color: #282828;
+  -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.85);
+  -moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.85);
+  box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.85);
+
 }
 footer a{
-  color: #f6e6bb;
+  color: #282828;
 }
 footer a:hover{
-  color: white;
-  text-decoration: line-through;
+  color: tomato;
+  font-weight: bold;
+  text-decoration: none;
 }
