@@ -8,13 +8,19 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <!--  za biranje datuma -->
+    <link href="css/bootstrap-datepicker3.min.css"rel="stylesheet"/>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/rezervacija.js"></script>
+    <script type="text/javascript" src="locales/bootstrap-datepicker.sr-latin.min.js" charset="UTF-8"></script>
+
+
 </head>
-<body class="mt-5">
+<body class="mt-1">
     <div class="container m-auto align-items-center rounded-bottom border border-warning text-dark">
 
             <h1 class="text-center mt-5">REZERVACIJA</h1>
-            <form class="container mt-5 ">
+            <form class="container mt-5 " autocomplete="off">
                 
                 <div class="form-row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
@@ -36,10 +42,10 @@
 
                 <div class="form-row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" placeholder="DATUM I VREME" onfocus="this.placeholder=''" onblur="this.placeholder='DATUM I VREME'">
+                    <input type="text" class="form-control list-group-item-warning" id="datum" placeholder="DATUM" >
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" placeholder="BROJ GOSTIJU" onfocus="this.placeholder=''" onblur="this.placeholder='BROJ GOSTIJU'">
+                    <input type="text" class="form-control list-group-item-warning" placeholder="VREME" >
                     </div>
                 </div>
 
@@ -51,5 +57,18 @@
         </form>
 
     </div>
+    <script type="text/javascript">
+    $('#datum').datepicker({
+        format: 'dd.mm.yyyy.',
+        weekStart: 1,
+        startDate: 'tomorow',
+        language: 'sr-latin',
+        daysOfWeekHighlighted: '0',
+        autoclose: true,
+        orientation: 'bottom left',
+        forceParse: false,
+        todayHighlight: true
+    });
+    </script>
 </body>
 </html>
