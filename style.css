@@ -28,12 +28,19 @@ nav{
   -moz-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.35);
   box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.35);
 }
+nav ul{
+  background-color: white!important;
+}
+.navbar-toggler:focus{
+  outline: none;
+}
 
 /*SKROLOVANJE*/
 .scrolled-nav {
   font-size: 16px;
   background-color: white !important;
   margin-top: 0px;
+  height: 60px !important;
 }
 #global-nav {
   position: fixed;
@@ -43,14 +50,10 @@ nav{
   height: 100px;
   width: 100%;
   color: #fff;
-  line-height: 150px;
   -webkit-transition: height .5s, line-height .5s; /* Safari */
   transition: height .5s, line-height .5s;
 }
-.scrolled-nav {
-  height: 60px !important;
-  line-height: 60px !important;
-}
+
 .counter {
   width: 20px;
   height: 20px;
@@ -71,39 +74,29 @@ nav{
 }
 /*Home page*/
 .home{
-  height:100vh !important;
-  width: 100vw;
+  height: 60vh !important;
+  position: ;
 }
 .first{
-  height: 100vh;
-  width: auto;
+  position: relative;
   margin-top: 15vh;
   float: left;
 }
-.plate{
-  float: right;
-  top: 200px;
+.second{
   position: relative;
-}
-.wine{
-  position: relative;
+  margin-top: 15vh;
   float: right;
-  top: 230px;
-
 }
 .text{
-  width: 50vw;
-  top: -320px;
-  position: relative;
-  text-align: left;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  margin-left: 210px;
+  margin-top: 60vh;
+  margin-left: 35vw;
+
 }
 /*ABOUT US SECTION*/
 .aboutUs{
-  height: 93vh;
+  height: 95vh;
   background: tomato;
   display: flex;
   align-items: center;
@@ -111,12 +104,13 @@ nav{
 }
 /*DIV SA CAROUSELOM*/
 .slajdovi{
-  height: 92vh !important;
+  height: 95vh !important;
   background: #282828;
   padding-top: 15vh;
 }
 .carouselbtn{
-  margin-top: 4vh;
+  margin-top: 3vh;
+  margin-left: 45%;
 }
 /*DIV ZA REYERVACIJU*/
 .reservation{
@@ -125,7 +119,7 @@ nav{
 }
 /*JELOVNIK*/
 .jelovnik{
-  height: 107vh !important;
+  height: 115vh !important;
   background: #282828;
 }
 /*KONTAKT*/
@@ -154,4 +148,12 @@ footer a:hover{
   color: tomato;
   font-weight: bold;
   text-decoration: none;
+}
+.social{
+  margin: auto !important;
+}
+.social a{
+  font-size: 30px;
+  padding: 10px;
+
 }
