@@ -106,7 +106,8 @@ nav ul{
 .slajdovi{
   height: 95vh !important;
   background: #282828;
-  padding-top: 15vh;
+  padding-top: 10vh;
+  align-items: center;
 }
 .carouselbtn{
   margin-top: 3vh;
