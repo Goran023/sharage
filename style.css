@@ -209,3 +209,8 @@ footer a:hover{
   padding: 10px;
 
 }
+@media screen and (max-width: 800px) {
+  .jelovnik {
+    height: 450vh !important;
+  }
+}
