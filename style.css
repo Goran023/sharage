@@ -72,6 +72,57 @@ nav ul{
   display: flex;
   flex-direction: column;
 }
+/*DUGMICI*/
+.pulse:hover,.pulse:focus,
+.pulse-white:hover,.pulse-white:focus,
+.pulse-dark:hover,.pulse-dark:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.pulse-white{
+  --color: #282828;
+  --hover: tomato;
+}
+.pulse,.pulse-dark{
+  --color: #282828;
+  --hover: #282828;
+}
+.pulse-white{
+  color:white;
+  transition: 0.25s;
+}
+.pulse-white:hover, .pulse-white:focus{
+  border-color: white;
+  color: white;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: #282828;
+  color: #282828;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font-family: 'Amiri', serif !important;
+  letter-spacing: 5px;
+  font-size: 20px !important;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
 /*Home page*/
 .home{
   height: 60vh !important;
