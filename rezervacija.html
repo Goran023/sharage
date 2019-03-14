@@ -19,45 +19,88 @@
 <body class="mt-1">
     <div class="container m-auto align-items-center rounded-bottom border border-warning text-dark">
 
-            <h1 class="text-center mt-5">REZERVACIJA</h1>
-            <form class="container mt-5 " autocomplete="off">
+            <h1 id="naslov" class="text-center mt-5">REZERVACIJA -<span id="brojstola"> sto br.</span></h1>
+            <form id="unos" class="container mt-5 " autocomplete="off" onsubmit="upis(this);hvala();return false">
                 
                 <div class="form-row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" placeholder="IME" onfocus="this.placeholder=''" onblur="this.placeholder='IME'">
+                    <input type="text" class="form-control list-group-item-warning" id="ime" placeholder="IME"  title="Molimo Vas unesite Vaše ime" onfocus="sati()" onblur ="capitalize(this)" required oninvalid="this.setCustomValidity('Molimo Vas unesite Vaše ime')" oninput="setCustomValidity('')">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" placeholder="PREZIME" onfocus="this.placeholder=''" onblur="this.placeholder='PREZIME'">
-                    </div>
-                </div>
-
-                <div class="form-row justify-content-center">
-                    <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" placeholder="TELEFON" onfocus="this.placeholder=''" onblur="this.placeholder='TELEFON'">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="email" class="form-control list-group-item-warning" aria-describedby="emailHelp" placeholder="EMAIL">
+                    <input type="text" class="form-control list-group-item-warning" id="prezime" placeholder="PREZIME"  title="Molimo Vas unesite Vaše prezime" onfocus="sati()" onblur ="capitalize(this)"required oninvalid="this.setCustomValidity('Molimo Vas unesite Vaše prezime')" oninput="setCustomValidity('')">
                     </div>
                 </div>
 
                 <div class="form-row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" id="datum" placeholder="DATUM" >
+                    <input type="text" class="form-control list-group-item-warning" id="telefon" placeholder="TELEFON"  title="Molimo Vas unesite Vaš broj telefona" required onfocus="sati()" oninvalid="this.setCustomValidity('Molimo Vas unesite Vaš broj telefona')" oninput="setCustomValidity('')">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" placeholder="VREME" >
+                    <input type="email" class="form-control list-group-item-warning" id="email" aria-describedby="emailHelp" onfocus="sati()" placeholder="EMAIL"  title="Molimo Vas unesite Vaš email">
+                    </div>
+                </div>
+
+                <div class="form-row justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
+                    <input type="text" class="form-control list-group-item-warning" id="datum" placeholder="DATUM"  title="Molimo Vas izaberite datum posete" onfocus="sati()" onblur="document.getElementById('sat').placeholder = 'VREME'" onchange="disable()" required oninvalid="this.setCustomValidity('Molimo Vas izaberite datum posete')" oninput="setCustomValidity('')">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
+                    <input type="text" class="form-control list-group-item-warning" id="sat" placeholder="VREME" title="Molimo Vas izaberite vreme" onfocus="vreme()" required oninvalid="this.setCustomValidity('Molimo Vas izaberite vreme')" onchange="setCustomValidity('')">
+
+                    
+                    <div id="vreme" class="datepicker datepicker-dropdown dropdown-menu datepicker-orient-left datepicker-orient-bottom" style="display:none">
+                        <table class="table">
+                        <thead>
+                          <tr class="list-group-item-warning">
+                            <th scope="col">Doručak</th>
+                            <th scope="col">Ručak</th>
+                            <th scope="col">Večera</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><button id="s08" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '08:00';sati()">08:00</button></td>
+                            <td><button id="s13" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '13:00';sati()">13:00</button></td>
+                            <td><button id="s18" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '18:00';sati()">18:00</button></td>
+                          </tr>
+                          <tr>
+                            <td><button id="s09" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '09:00';sati()">09:00</button></td>
+                            <td><button id="s14" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '14:00';sati()">14:00</button></td>
+                            <td><button id="s19" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '19:00';sati()">19:00</button></td>
+                          </tr>
+                          <tr>
+                            <td><button id="s10" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '10:00';sati()">10:00</button></td>
+                            <td><button id="s15" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '15:00';sati()">15:00</button></td>
+                            <td><button id="s20" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '20:00';sati()">20:00</button></td>
+                          </tr>             
+                          <tr>
+                            <td><button id="s11" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '11:00';sati()">11:00</button></td>
+                            <td><button id="s16" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '16:00';sati()">16:00</button></td>
+                            <td><button id="s21" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '21:00';sati()">21:00</button></td>
+                          </tr>
+                          <tr>
+                            <td><button id="s12" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '12:00';sati()">12:00</button></td>
+                            <td><button id="s17" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '17:00';sati()">17:00</button></td>
+                            <td><button id="s22" type="button" class="btn btn-outline-warning" onclick="document.getElementById('sat').value = '22:00';sati()">22:00</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                     </div>
                 </div>
 
                 <div class="form-row justify-content-end">
                     <div class="mb-4">
-                    <button class="btn btn-outline-dark justify-content-center text-danger" type="rezervacija">REZERVIŠI</button>
+                    <button class="btn btn-outline-dark justify-content-center text-danger" id="dugme" type="button" onclick="window.location.href='index.html'" >ODUSTANITE</button>
+                    <button class="btn btn-outline-dark justify-content-center text-success" id="dugme" type="submit">REZERVIŠITE</button>
                     </div>
                 </div>
         </form>
 
     </div>
-    <script type="text/javascript">
+
+    <script type="text/javascript"> // mora ovde da stoji
+    document.getElementById('brojstola').innerHTML = ' sto br. ' + sto;
     $('#datum').datepicker({
         format: 'dd. MM yyyy.',
         weekStart: 1,

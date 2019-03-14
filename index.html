@@ -119,8 +119,25 @@
         <div class="reservation">
             <!--REZERVACIJA KONTAKT-->
             <div>
+                <script>
+                    function dosubmit(salji){
+                      var sto = salji.id;
+                      document.getElementById("rezervacija").action = "rezervacija.html?" + sto;
+                      window.event.returnValue = true;
+                    }
+                    </script>
+              <form id="rezervacija"method="POST"action=""onsubmit="dosubmit()">
                 <img id="reservation" src="">Slika stolova
                 <button type="button" class="btn btn-outline-warning rounded-pill ml-auto">REZERVIŠITE</button>
+                <button id="sto1" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 1</button>
+                <button id="sto2" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 2</button>
+                <button id="sto3" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 3</button>
+                <button id="sto4" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 4</button>
+                <button id="sto5" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 5</button>
+                <button id="sto6" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 6</button>
+                <button id="sto7" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 7</button>
+              </form>
+            </div>
             </div>
         </div>
         <!--Prelaz-->
