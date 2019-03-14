@@ -1,4 +1,9 @@
 var red = [];
+if (localStorage.getItem('red') === null) {
+	red.push('brstola', ' ime', 'prezime', 'telefon', ' email', 'datum', 'sat');
+	red.toString();
+	localStorage.setItem('red', red);
+}
 res = localStorage.getItem('red');
 var red = res.split(',');
 var string = window.location.href; // ovde skupljam iz adrese podatke o stolu - method POST sa prethodne strane
