@@ -1,11 +1,12 @@
-var red = [];
 if (localStorage.getItem('red') === null) {
+	var red = [];
 	red.push('brstola', ' ime', 'prezime', 'telefon', ' email', 'datum', 'sat');
 	red.toString();
 	localStorage.setItem('red', red);
+} else {
+	res = localStorage.getItem('red');
+	var red = res.split(',');
 }
-res = localStorage.getItem('red');
-var red = res.split(',');
 var string = window.location.href; // ovde skupljam iz adrese podatke o stolu - method POST sa prethodne strane
 var getit = new Array(); // definisem pomocni niz
 getit = string.split('?'); // delim adresu na dva dela
