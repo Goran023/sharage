@@ -7,11 +7,14 @@ if (localStorage.getItem('red') === null) {
 	res = localStorage.getItem('red');
 	var red = res.split(',');
 }
-var string = window.location.href; // ovde skupljam iz adrese podatke o stolu - method POST sa prethodne strane
-var getit = new Array(); // definisem pomocni niz
-getit = string.split('?'); // delim adresu na dva dela
-niz = unescape(getit[1]); // koristim drugi deo adrese 'sto#'
-sto = niz.slice(3, 4); // secem 'sto' , ostaje samo broj
+var string = window.location.href;
+var getit = new Array();
+getit = string.split('?');
+niz = unescape(getit[1]);
+sto = niz.slice(3, 4);
+window.onload = function what() {
+	document.getElementById('brojstola').innerHTML = ' sto br. ' + sto;
+};
 document.getElementById('rezervacija').addEventListener('submit', hvala);
 
 function capitalize(form) {

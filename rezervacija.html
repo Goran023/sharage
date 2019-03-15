@@ -42,10 +42,32 @@
 
                 <div class="form-row justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" id="datum" placeholder="DATUM"  title="Molimo Vas izaberite datum posete" onfocus="sati()" onblur="document.getElementById('sat').placeholder = 'VREME'" onchange="disable()" required oninvalid="this.setCustomValidity('Molimo Vas izaberite datum posete')" oninput="setCustomValidity('')">
+                    <input 
+                      type="text" 
+                      class="form-control list-group-item-warning" 
+                      id="datum" 
+                      placeholder="DATUM"  
+                      title="Molimo Vas izaberite datum posete" 
+                      onfocus="sati()" 
+                      onblur="document.getElementById('sat').placeholder = 'VREME'" 
+                      onchange="disable();this.setCustomValidity('')" 
+                      oninvalid="this.setCustomValidity('Molimo Vas izaberite datum posete')"
+                      required>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
-                    <input type="text" class="form-control list-group-item-warning" id="sat" placeholder="VREME" title="Molimo Vas izaberite vreme" onfocus="vreme()" required oninvalid="this.setCustomValidity('Molimo Vas izaberite vreme')" onchange="setCustomValidity('')">
+                    
+                  <div class="col-lg-6 col-md-6 col-sm-8 mb-4">
+                    
+                  <input 
+                    type="text" 
+                    class="form-control list-group-item-warning" 
+                    id="sat" 
+                    placeholder="VREME" 
+                    title="Molimo Vas izaberite vreme" 
+                    onfocus="vreme()" 
+                    oninvalid="this.setCustomValidity('Molimo Vas izaberite vreme')" 
+                    onblur="this.setCustomValidity('')"
+                    onchange="this.setCustomValidity('')" 
+                    required>
 
                     
                     <div id="vreme" class="datepicker datepicker-dropdown dropdown-menu datepicker-orient-left datepicker-orient-bottom" style="display:none">
@@ -100,7 +122,6 @@
     </div>
 
     <script type="text/javascript"> // mora ovde da stoji
-    document.getElementById('brojstola').innerHTML = ' sto br. ' + sto;
     $('#datum').datepicker({
         format: 'dd. MM yyyy.',
         weekStart: 1,
