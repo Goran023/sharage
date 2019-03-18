@@ -170,3 +170,17 @@ function enable() {
 	document.getElementById('s22').disabled = false;
 	document.getElementById('s22').className = 'btn btn-outline-warning';
 }
+
+function sakrijRezervaciju() {
+	document.getElementById('bg_mask').style.visibility = 'hidden'; // sakrivam background mask i front layer
+	document.getElementById('frontlayer').style.visibility = 'hidden';
+}
+function dosubmit(salji) {
+	var sto = salji.id;
+	document.getElementById('rezervacija').action = 'rezervacija.html?' + sto;
+	window.event.returnValue = true;
+}
+function prikaziRezervaciju() {
+	document.getElementById('bg_mask').style.visibility = 'visible';
+	document.getElementById('frontlayer').style.visibility = 'visible';
+}

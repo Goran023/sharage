@@ -15,10 +15,11 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,500|Arvo:700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri" rel="stylesheet">
+    <script type="text/javascript" src="js/rezervacija.js"></script>
+
   </head>
   <body>
     <!--header-->
@@ -32,7 +33,7 @@
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav nav-fill w-100">
                     <li class="nav-item active">
-                        <a class="nav-link " href="#reservation">Rezervacija</a>
+                        <a class="nav-link " href="#reservation" onclick="prikaziRezervaciju()">Rezervacija</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#aboutus">O nama</a>
@@ -58,7 +59,7 @@
             <div class="text col-sm-12 col-md-12 col-lg-12 mix-auto">
                 <center><h3>Rezervišite na vreme</h3>
                   <p>..i svratite na fruštuk, jauznu, <br> ili pak, na foršpajs, rinflajš i čušpajs</p>
-                  <button type="button" class="pulse">REZERVIŠITE</button>
+                  <button type="button" class="pulse"onclick="prikaziRezervaciju()">REZERVIŠITE</button>
             </div>
         </div>
         <div class="clearfix">
@@ -92,7 +93,7 @@
            
               <span class="row justify-content-center">
 
-              <button type="button" class="pulse-white mb-5" >REZERVIŠITE</button>
+              <button type="button" class="pulse-white mb-5" onclick="prikaziRezervaciju()">REZERVIŠITE</button>
             </span>
            <!-- The slideshow -->
            <span class="row justify-content-center text-center">
@@ -123,16 +124,10 @@
         <!--Prelaz sa strane na stranu-->
         <!--kraj stranice o nama-->
         <p class="comment col-lg-8 col-md-8 col-sm-12 col-12 ml-auto text-justify">"Vrlo prijatan ambijent, moderan, a možete uživati i u modernoj i tradicionalnoj kuhinji, osoblje je za svaku pohvalu, od konobara, preko kuvara, do poslastičara"</p>
-        <div class="reservation">
+ 
             <!--REZERVACIJA KONTAKT-->
-            <div>
-                <script>
-                    function dosubmit(salji){
-                      var sto = salji.id;
-                      document.getElementById("rezervacija").action = "rezervacija.html?" + sto;
-                      window.event.returnValue = true;
-                    }
-                    </script>
+            <div id="bg_mask">
+              <div id="frontlayer"><br/>
               <form id="rezervacija"method="POST"action=""onsubmit="dosubmit()">
                 <img id="reservation" src="">Slika stolova
                 <button id="sto1" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 1</button>
@@ -143,9 +138,14 @@
                 <button id="sto6" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 6</button>
                 <button id="sto7" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 7</button>
               </form>
+                <input type="button" style="float:right" class="btn-lg btn-warning" value="Nastavite sa razgledanjem" onclick="sakrijRezervaciju();"/>
+              </div>
+            </div>
+            <div>
+         
             </div>
             </div>
-        </div>
+         
         <!--Prelaz-->
         <div>
             <p class="comment col-lg-8 col-md-8 col-sm-12 col-12 mr-auto text-justify">"Kad god dođem do Zrenjanina obavezno posetim ovaj restoran,  mislim da takav ambijent i kuhinja ne postoje nigde" </p>
@@ -153,6 +153,7 @@
 
         <!-- JELOVNIK SEKCIJA -->
         <div  class="jelovnik">
+            <br><br><br>
           <section id="jelovnik" class="main">
 
             <div id="rm-container" class="rm-container">
@@ -301,9 +302,7 @@
             <script type="text/javascript" src="js/menu.js"></script>
           <script type="text/javascript">
             $(function() {
-
               Menu.init();
-
             });
           </script>
 
