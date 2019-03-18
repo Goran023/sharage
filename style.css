@@ -157,7 +157,7 @@ button {
 .slajdovi{
   height: 95vh !important;
   background: #282828;
-  padding-top: 10vh;
+  padding-top: 5vh;
   align-items: center;
 }
 .carouselbtn{
@@ -176,7 +176,7 @@ button {
 }
 /*KONTAKT*/
 .contact{
-  height: 90vh;
+  height: 50vh;
 }
 /* Vrh button */
 #myBtn{
