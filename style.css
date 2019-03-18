@@ -157,7 +157,7 @@ button {
 .slajdovi{
   height: 95vh !important;
   background: #282828;
-  padding-top: 5vh;
+  padding: 5vh 0vh;
   align-items: center;
 }
 .carouselbtn{
@@ -212,5 +212,8 @@ footer a:hover{
 @media screen and (max-width: 800px) {
   .jelovnik {
     height: 450vh !important;
+  }
+  button{
+    font-size: 15px !important;
   }
 }
