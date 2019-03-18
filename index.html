@@ -17,8 +17,9 @@
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri" rel="stylesheet">
     <script type="text/javascript" src="js/rezervacija.js"></script>
+    <script type="text/javascript" src="js/backtop.js"></script>
+
 
   </head>
   <body>
@@ -356,24 +357,8 @@
 
 
 <!--Dugme za vracanje na vrh stranice-->
-<button class="btn btn-outline-danger btn-sm ml-2" onclick="topFunction()" id="myBtn" title="Go to top">&#8679</button>
+<div id="backtop"data-v-w="70">&#9650;</div>
 
-<script>
-window.onscroll = function() {scrollFunction()};
-document.getElementById("myBtn").style.display = "none";
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
-    }
-  }
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
 <!--navigacioni bar se smanjuje-->
 <script>
     $(document).ready(function(){

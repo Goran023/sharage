@@ -575,6 +575,36 @@ a.rm-viewdetails:hover,
 	z-index: 4;
 }
 
+#backtop {
+	position: fixed;
+	left: 20px;
+	right: auto;
+	top: auto;
+	bottom: 20px;
+	outline: none;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(49, 79, 96, 0.64);
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.4s linear;
+	z-index: 999999;
+
+	opacity: 1;
+	display: none;
+}
+#backtop:hover {
+	background-color: red;
+}
+#backtop.mcOut {
+	opacity: 0;
+}
+
 /*Bilo u style.css*/
 
 * {
@@ -761,12 +791,7 @@ button {
 .contact {
 	height: 50vh;
 }
-/* Vrh button */
-#myBtn {
-	position: fixed;
-	bottom: 20px;
-	z-index: 99;
-}
+
 /*FOOTER*/
 footer {
 	background-color: white;
