@@ -177,7 +177,6 @@ function sakrijRezervaciju() {
 }
 function dosubmit(salji) {
 	var sto = salji.id;
-	alert(sto);
 	document.getElementById('rezervacija').action = 'rezervacija.html?' + sto;
 	window.event.returnValue = true;
 }
