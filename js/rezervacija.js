@@ -175,12 +175,27 @@ function sakrijRezervaciju() {
 	document.getElementById('bg_mask').style.visibility = 'hidden'; // sakrivam background mask i front layer
 	document.getElementById('frontlayer').style.visibility = 'hidden';
 }
+
 function dosubmit(salji) {
 	var sto = salji.id;
 	document.getElementById('rezervacija').action = 'rezervacija.html?' + sto;
 	window.event.returnValue = true;
 }
+
 function prikaziRezervaciju() {
 	document.getElementById('bg_mask').style.visibility = 'visible';
 	document.getElementById('frontlayer').style.visibility = 'visible';
+}
+
+function dozvoljeno() {
+	document.getElementById('info1').style.display = 'block';
+}
+
+function zabranjeno() {
+	document.getElementById('info2').style.display = 'block';
+}
+
+function sakrivanje() {
+	document.getElementById('info1').style.display = 'none';
+	document.getElementById('info2').style.display = 'none';
 }

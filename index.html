@@ -134,21 +134,23 @@
                   <div class="col">
                     <img src="stolovi/stolovi.png" alt="" usemap="#Mapa" />
                     <map name="Mapa" id="Mapa" width="656" height="377">
-                      <area id="sto1" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="148,44,182,79" />
-                      <area id="sto2" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="259,44,293,78" />
-                      <area id="sto3" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="371,44,408,78" />
-                      <area id="sto4" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="484,44,520,80" />
-                      <area id="sto9" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="90,169,147,197" />
-                      <area id="sto10" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="292,168,393,202" />
-                      <area id="sto11" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohre shape="rect" coords="542,169,600,197" />
-                      <area id="sto5" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="146,278,182,316" />
-                      <area id="sto6" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="259,280,296,316" />
-                      <area id="sto7" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="372,280,409,315" />
-                      <area id="sto8" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="484,279,521,317" />
+                      <area id="sto1" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="148,44,182,79" />
+                      <area id="sto2" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="259,44,293,78" />
+                      <area id="sto3" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="371,44,408,78" />
+                      <area id="sto4" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="484,44,520,80" />
+                      <area id="sto9" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="90,169,147,197" />
+                      <area id="sto10" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="292,168,393,202" />
+                      <area id="sto11" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohre shape="rect" coords="542,169,600,197" />
+                      <area id="sto5" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="146,278,182,316" />
+                      <area id="sto6" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="259,280,296,316" />
+                      <area id="sto7" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="372,280,409,315" />
+                      <area id="sto8" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="484,279,521,317" />
                     </map>
                   </div>
-                  <div class="col">
-                    <input type="button" style="float:right" class="btn-lg btn-warning" value="Nastavite razgledanje" onclick="sakrijRezervaciju();"/>
+                  <div class="col mx-auto">
+                    <input type="button"  class="btn-lg btn-warning" value="Nastavite razgledanje" onclick="sakrijRezervaciju();"/>
+                    <span id="info1" style="display:none"><img src="slike/dozvoljeno.png" width="60%"></span>
+                    <span id="info2" style="display:none"><img src="slike/zabranjeno.png" width="60%"></span>
                   </div>
                 </div>
               </form>
