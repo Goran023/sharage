@@ -129,16 +129,22 @@
             <!--REZERVACIJA KONTAKT-->
             <div id="bg_mask">
               <div id="frontlayer"><br/>
-              <form id="rezervacija"method="POST"action=""onsubmit="dosubmit()">
-                <img id="reservation" src="">Slika stolova
-                <button id="sto1" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 1</button>
-                <button id="sto2" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 2</button>
-                <button id="sto3" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 3</button>
-                <button id="sto4" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 4</button>
-                <button id="sto5" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 5</button>
-                <button id="sto6" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 6</button>
-                <button id="sto7" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 7</button>
-              </form>
+              <form id="rezervacija"method="POST"action=""onsubmit="dosubmit(this)">
+                <img src="stolovi/stolovi.png" alt="" usemap="#Map" />
+                <map name="Map" id="Map" width="656" height="377">
+                  <area id="sto1" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" nohref shape="rect" coords="148,44,182,79" />
+                  <area id="sto2" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="259,44,293,78" />
+                  <area id="sto3" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="371,44,408,78" />
+                  <area id="sto4" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="484,44,520,80" />
+                  <area id="sto9" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="90,169,147,197" />
+                  <area id="sto10" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="292,168,393,202" />
+                  <area id="sto11" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="542,169,600,197" />
+                  <area id="sto5" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="146,278,182,316" />
+                  <area id="sto6" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="259,280,296,316" />
+                  <area id="sto7" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="372,280,409,315" />
+                  <area id="sto8" onclick="dosubmit(this);rezervacija.submit(this)" alt="" title="" href="#" shape="rect" coords="484,279,521,317" />
+                </map>
+                </form>
                 <input type="button" style="float:right" class="btn-lg btn-warning" value="Nastavite sa razgledanjem" onclick="sakrijRezervaciju();"/>
               </div>
             </div>
