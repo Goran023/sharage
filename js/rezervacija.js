@@ -11,7 +11,7 @@ var string = window.location.href;
 var getit = new Array();
 getit = string.split('?');
 niz = unescape(getit[1]);
-sto = niz.slice(3, 4);
+sto = niz.slice(3, 5);
 window.onload = function what() {
 	document.getElementById('brojstola').innerHTML = ' sto br. ' + sto;
 };
