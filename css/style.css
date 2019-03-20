@@ -130,7 +130,6 @@ button {
 /*Home page*/
 .home {
 	height: 60vh !important;
-	position: ;
 }
 .first {
 	position: relative;
@@ -174,8 +173,9 @@ button {
 }
 /*JELOVNIK*/
 .jelovnik {
-	height: 130vh !important;
+	height: 150vh !important;
 	background: #282828;
+	padding: 20px 0px;
 }
 /*KONTAKT*/
 .contact {
@@ -207,12 +207,25 @@ footer a:hover {
 }
 @media screen and (max-width: 800px) {
 	.jelovnik {
-		height: 470vh !important;
+		height: 500vh !important;
 	}
 	button {
 		font-size: 15px !important;
 	}
 }
+
+@media screen and (max-width: 960px) {
+	.jelovnik {
+		height: 500vh !important;
+	}
+	button {
+		font-size: 15px !important;
+	}
+	.text{
+		font-size: 5rem !important;
+	}
+	}
+
 /*CSS JELOVNIKA*/
 @import url('normalize.css');
 @import url('demo.css');
@@ -800,9 +813,9 @@ a.rm-viewdetails:hover,
 	bottom: 20px;
 	outline: none;
 	overflow: hidden;
-	color: #fff;
+	color: white;
 	text-align: center;
-	background-color: rgba(40, 40, 40, 0.64);
+	background-color: rgba(64, 64, 64, 0.64);
 	height: 40px;
 	width: 40px;
 	line-height: 40px;
@@ -815,7 +828,7 @@ a.rm-viewdetails:hover,
 	display: none;
 }
 #backtop:hover {
-	background-color: tomato;
+	background-color: #ff7d66;
 }
 #backtop.mcOut {
 	opacity: 0;
