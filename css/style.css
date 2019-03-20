@@ -823,3 +823,7 @@ a.rm-viewdetails:hover,
 #backtop.mcOut {
 	opacity: 0;
 }
+.banner{
+	width: 200px;
+	height: 200px;
+}
