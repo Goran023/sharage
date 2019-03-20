@@ -173,9 +173,9 @@ button {
 }
 /*JELOVNIK*/
 .jelovnik {
-	height: 150vh !important;
+	height: 130vh !important;
 	background: #282828;
-	padding: 20px 0px;
+	padding: 5px 0px;
 }
 /*KONTAKT*/
 .contact {
@@ -230,7 +230,6 @@ footer a:hover {
 
 body {
 	background: #f6e6bb !important;
-	width: 100vw;
 }
 .rm-info p {
 	padding-top: 250px;
