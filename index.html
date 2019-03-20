@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="restoran, Zrenjanina, kuhinja, ambijent, tradicionalnoj, modernoj, REZERVIŠITE">
     <meta name="description" content="restoran">
-    <meta name="author" content="Goran Malenić, Verica Milatović, Filip Jungić, Monika Čeke">
+    <meta name="author" content="Goran Malenić, Verica Milatović, Filip Jungić, Monika Čeke, Bojan Ramić">
     <title>Restoran Sharage</title>
     <!--Izmenila sam ikonicu-Verica-->
     <link rel="icon" href="slike/logo100.png">
@@ -91,7 +91,7 @@
              <li data-target="#demo" data-slide-to="2"></li>
            </ul>
            <!--dugme iznad slajdova-->
-           
+
               <span class="row justify-content-center">
 
               <button type="button" class="pulse-white mb-5" onclick="prikaziRezervaciju()">REZERVIŠITE</button>
@@ -117,36 +117,47 @@
              <span class="carousel-control-next-icon"></span>
            </a>
            <br>
-           
+
           </div>
          <!--kraj slajdova-->
-          
+
       </div>
         <!--Prelaz sa strane na stranu-->
         <!--kraj stranice o nama-->
         <p class="comment col-lg-8 col-md-8 col-sm-12 col-12 ml-auto text-justify">"Vrlo prijatan ambijent, moderan, a možete uživati i u modernoj i tradicionalnoj kuhinji, osoblje je za svaku pohvalu, od konobara, preko kuvara, do poslastičara"</p>
- 
+
             <!--REZERVACIJA KONTAKT-->
             <div id="bg_mask">
               <div id="frontlayer"><br/>
-              <form id="rezervacija"method="POST"action=""onsubmit="dosubmit()">
-                <img id="reservation" src="">Slika stolova
-                <button id="sto1" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 1</button>
-                <button id="sto2" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 2</button>
-                <button id="sto3" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 3</button>
-                <button id="sto4" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 4</button>
-                <button id="sto5" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 5</button>
-                <button id="sto6" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 6</button>
-                <button id="sto7" type="submit" class="btn btn-outline-warning rounded-pill ml-auto" onclick="dosubmit(this)">Sto br 7</button>
+              <form id="rezervacija" method="POST" action="" onsubmit="dosubmit(this)">
+                <div class="form-row">
+                  <div class="col">
+                    <img src="stolovi/stolovi.png" alt="" usemap="#Mapa" />
+                    <map name="Mapa" id="Mapa" width="656" height="377">
+                      <area id="sto1" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="148,44,182,79" />
+                      <area id="sto2" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="259,44,293,78" />
+                      <area id="sto3" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="371,44,408,78" />
+                      <area id="sto4" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="484,44,520,80" />
+                      <area id="sto9" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="90,169,147,197" />
+                      <area id="sto10" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="292,168,393,202" />
+                      <area id="sto11" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="dozvoljeno()" onmouseout="sakrivanje()" alt="" title="" nohre shape="rect" coords="542,169,600,197" />
+                      <area id="sto5" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="146,278,182,316" />
+                      <area id="sto6" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="259,280,296,316" />
+                      <area id="sto7" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="372,280,409,315" />
+                      <area id="sto8" onclick="dosubmit(this);rezervacija.submit(this)" onmouseover="zabranjeno()" onmouseout="sakrivanje()" alt="" title="" nohref shape="rect" coords="484,279,521,317" />
+                    </map>
+                  </div>
+                  <div class="col mx-auto">
+                    <input type="button"  class="btn-lg btn-warning" value="Nastavite razgledanje" onclick="sakrijRezervaciju();"/>
+                    <span id="info1" style="display:none"><img src="slike/dozvoljeno.png" width="60%"></span>
+                    <span id="info2" style="display:none"><img src="slike/zabranjeno.png" width="60%"></span>
+                  </div>
+                </div>
               </form>
-                <input type="button" style="float:right" class="btn-lg btn-warning" value="Nastavite sa razgledanjem" onclick="sakrijRezervaciju();"/>
               </div>
             </div>
-            <div>
-         
             </div>
-            </div>
-         
+
         <!--Prelaz-->
         <div>
             <p class="comment col-lg-8 col-md-8 col-sm-12 col-12 mr-auto text-justify">"Kad god dođem do Zrenjanina obavezno posetim ovaj restoran,  mislim da takav ambijent i kuhinja ne postoje nigde" </p>
@@ -154,7 +165,7 @@
 
         <!-- JELOVNIK SEKCIJA -->
         <div  class="jelovnik">
-            <br><br><br>
+
           <section id="jelovnik" class="main">
 
             <div id="rm-container" class="rm-container">
@@ -296,7 +307,10 @@
             </div><!-- /rm-container -->
 
           </section>
+          <span class="row justify-content-center">
 
+            <button type="button" class="pulse-white" onclick="prikaziRezervaciju()">REZERVIŠITE</button>
+          </span>
         </div>
         <!-- jQuery -->
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -309,9 +323,7 @@
 
         <!--KONTAKT SEKCIJA-->
         <div class="row">
-          <img src="slike/knife.png" width="200px" height="300px">Ucesnik1
-          <img src="slike/fork.png" width="200px" height="300px">Ucesnik2
-          <div id="contact" class="contact col-lg-6 col-md-6 col-sm-12 col-12">
+          <div id="contact" class="contact col-lg-8 col-md-8 col-sm-12 col-12 mx-auto text-center">
               <p><b>Restoran Sharage</b><br/>
                  Dr Kornela Radulovića 18<br/>
                 Zrenjanin, Srbija<br/>
@@ -319,14 +331,13 @@
                   <b>Fax:</b> 023/510-004<br/>
                 <b>Radno vreme:</b><br/>08-00h
               </p>
-              <img src="slike/spatula.png" width="200px" height="300px">Ucesnik3
-              <img src="slike/spatula.png" width="200px" height="300px">Ucesnik4
+
+          </div>
+          <div class="col-12">
+            <iframe width="100%" height="300px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Dr%20Kornela%20Radlovica%2018%2C%20Zrenjanin+(Restoran%20Sharage)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
 
-        <div class="col-12">
-            <iframe width="100%" height="300px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Dr%20Kornela%20Radlovica%2018%2C%20Zrenjanin+(Restoran%20Sharage)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            
-          </div>
+
         </div>
           </div>
         </div>
