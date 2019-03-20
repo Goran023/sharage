@@ -14,6 +14,29 @@ niz = unescape(getit[1]);
 sto = niz.slice(3, 5);
 window.onload = function what() {
 	document.getElementById('brojstola').innerHTML = ' sto br. ' + sto;
+	switch (sto) {
+		case '1':
+		case '2':
+		case '3':
+		case '4':
+			document.getElementById('podnaslov').innerHTML = 'Sto za 4 osobe - dozvoljeno pušenje';
+			break;
+		case '5':
+		case '6':
+		case '7':
+		case '8':
+			document.getElementById('podnaslov').innerHTML = 'Sto za 4 osobe - zabranjeno pušenje';
+			break;
+		case '9':
+			document.getElementById('podnaslov').innerHTML = 'Sto za 6 osoba - zabranjeno pušenje';
+			break;
+		case '10':
+			document.getElementById('podnaslov').innerHTML = 'Sto za 10 osoba - zabranjeno pušenje';
+			break;
+		case '11':
+			document.getElementById('podnaslov').innerHTML = 'Sto za 6 osoba - dozvoljeno pušenje';
+			break;
+	}
 };
 document.getElementById('rezervacija').addEventListener('submit', hvala);
 
