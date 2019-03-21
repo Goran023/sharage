@@ -33,6 +33,9 @@ nav ul {
 .navbar-toggler:focus {
 	outline: none;
 }
+a.active{
+	font-weight: bold;
+}
 
 /*SKROLOVANJE*/
 .scrolled-nav {
@@ -155,6 +158,9 @@ button {
 	align-items: center;
 	align-content: center;
 }
+.aboutUs a{
+	color: #f6e6bb;
+}
 /*DIV SA CAROUSELOM*/
 .slajdovi {
 	height: 95vh !important;
@@ -181,14 +187,17 @@ button {
 .contact {
 	height: 50vh;
 }
+/*BANNERS*/
+.baner{
+	-webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.85);
+	-moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.85);
+	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.85);
 
+}
 /*FOOTER*/
 footer {
 	background-color: white;
 	color: #282828;
-	-webkit-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.85);
-	-moz-box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.85);
-	box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.85);
 }
 footer a {
 	color: #282828;
@@ -205,6 +214,25 @@ footer a:hover {
 	font-size: 30px;
 	padding: 10px;
 }
+
+@media (max-width: 575.98px) {
+}
+
+
+@media (max-width: 767.98px) {
+
+}
+
+
+@media (max-width: 991.98px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
 @media screen and (max-width: 800px) {
 	.jelovnik {
 		height: 500vh !important;
@@ -822,8 +850,4 @@ a.rm-viewdetails:hover,
 }
 #backtop.mcOut {
 	opacity: 0;
-}
-.banner{
-	width: 200px;
-	height: 200px;
 }
