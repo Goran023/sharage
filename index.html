@@ -24,14 +24,16 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--header-->
+    
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-white fixed-top nav" id="global-nav">
+ 
             <div class="container-fluid p-0">
                 <a class="navbar-brand" href="#" hidden></a>
                 <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                     <div><img class="navbar-toggler border-0" src="slike/logo75.png" alt="logo restorana-restoran sharage-restoran zrenjanin"></div>
-                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <div class="row collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav nav-fill w-100">
                     <li class="nav-item">
                         <a class="nav-link " href="#reservation" onclick="prikaziRezervaciju()">Rezervacija</a>
@@ -49,9 +51,15 @@
                         <a class="nav-link  " href="#contact">Kontakt</a>
                     </li>
                  </ul>
+                 <div class=" row progress-container align-items-end" >
+                    <div class="mb-0 pb-0 progress-bar align-items-end" id="myBar"></div>
+                  </div>  
                 </div>
+                   
             </div>
+
         </nav>
+        
         <!--Prelaz sa strane na stranu sa par reci o restoranu-->
         <!-- HOME SEKCIJA -->
         <div class="home">
@@ -356,7 +364,7 @@
         <div class=" col-lg-3  col-md-3 col-sm-6 col-6 mx-auto d-block" style="width: 18rem;">
           <div class="card-body text-center">  
             
-            <a href="http://23.95.242.218/Photo/index.html"><img class="img-thumbnail border-0" width="100px" src="slike/camera.png"></a>
+            <a href="http://www.fedzr.tk/grupa2"><img class="img-thumbnail border-0" width="100px" src="slike/camera.png"></a>
           </div>
         </div>
 
@@ -370,14 +378,14 @@
         <div class="col-lg-3  col-md-3 col-sm-6 col-6 mx-auto d-block" style="width: 18rem;">
           <div class="card-body text-center">
             
-            <a href="http://23.95.242.218/Rakija/index.html"><img class="img-thumbnail border-0" width="100px" src="slike/frontend.png"></a>
+            <a href="http://www.fedzr.tk/grupa1"><img class="img-thumbnail border-0" width="100px" src="slike/frontend.png"></a>
           </div>
         </div>
 
         <div class=" col-lg-3 col-md-3 col-sm-6 col-6 mx-auto d-block" style="width: 18rem;">
           <div class="card-body text-center">
             
-            <a href="http://www.fedzr.tk/grupa2"><img class="img-thumbnail border-0" width="100px" src="slike/freetanica.png"></a>
+            <a href="http://www.fedzr.tk/grupa3"><img class="img-thumbnail border-0" width="100px" src="slike/freetanica.png"></a>
           </div>
   </div>
 </div>
@@ -415,6 +423,16 @@
       });
 
     });
+    window.onscroll = function() {
+	  progressbar();
+    };
+    function progressbar() {
+	  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = winScroll / height * 100;
+	  document.getElementById('myBar').style.width = scrolled + '%';
+    }
+
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
