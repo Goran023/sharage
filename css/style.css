@@ -179,13 +179,20 @@ button {
 }
 /*JELOVNIK*/
 .jelovnik {
-	height: 130vh !important;
+	height: 140vh !important;
 	background: #282828;
-	padding: 5px 0px;
+	padding: 50px 0px 0px 0px;
 }
 /*KONTAKT*/
 .contact {
 	height: 50vh;
+	background: tomato;
+}
+.kontakt{
+	background: tomato;
+}
+.contact p{
+	margin-top: 10vh;
 }
 /*BANNERS*/
 .baner{
@@ -196,6 +203,7 @@ button {
 }
 /*FOOTER*/
 footer {
+	padding-top: 10px;
 	background-color: white;
 	color: #282828;
 }
@@ -211,31 +219,14 @@ footer a:hover {
 	margin: auto !important;
 }
 .social a {
-	font-size: 30px;
+	font-size: 20px;
 	padding: 10px;
 }
 
-@media (max-width: 575.98px) {
-}
-
-
-@media (max-width: 767.98px) {
-
-}
-
-
-@media (max-width: 991.98px) {
-
-}
-
-
-@media (max-width: 1199.98px) {
-
-}
 
 @media screen and (max-width: 800px) {
 	.jelovnik {
-		height: 500vh !important;
+		height: 480vh !important;
 	}
 	button {
 		font-size: 15px !important;
